@@ -9,9 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.3",
+    "react-intersection-observer": "^10.0.3",
+    "react-scroll-parallax": "^3.5.0",
+    "swiper": "^12.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",
