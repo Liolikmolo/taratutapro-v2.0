@@ -1,3 +1,5 @@
+"use client";
+
 import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay} from "swiper/modules";
@@ -20,6 +22,7 @@ const ProjectSwiper = () => {
             .then((res) => res.json())
             .then(data => setProjects(data));
     }, [])
+    console.log(projects);
 
     return (
         <Swiper
@@ -46,15 +49,15 @@ const ProjectSwiper = () => {
                             <div className = "relative">
                                 <div className = "w-auto h-80">
                                     <Image
-                                        src = {value.coverImage}
-                                        alt = {value.title}
+                                        src = {value?.coverImage}
+                                        alt = {value?.title}
                                         width = {530}
                                         height = {530}
                                         style = {{width: "100%", maxWidth: "100%", height: "100%", objectFit: "cover"}}
                                     />
                                 </div>
                                 <Link
-                                    href = {`/projects/${value.slug}`}
+                                    href = {`/projects/${value?.slug}`}
                                     className = "absolute top-0 left-0 backdrop-blur-xs bg-black/70 w-full h-full hidden group-hover:flex"
                                 >
                                     <span className = "flex justify-center items-center p-5 w-full">
@@ -78,10 +81,10 @@ const ProjectSwiper = () => {
                             </div>
                             <div className = "flex flex-col gap-2 lg:gap-4">
                                 <h3>
-                                    {value.title}
+                                    {value?.title}
                                 </h3>
                                 <div className = "flex gap-3">
-                                    {value.ScopeOfWork.map((tag, index) => {
+                                    {value?.ScopeOfWork?.map((tag, index) => {
                                         return (
                                             <p
                                                 key = {index}

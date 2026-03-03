@@ -1,8 +1,8 @@
 import {join} from "path";
-import * as fs from "node:fs";
+import fs from "fs";
 import matter from "gray-matter";
 
-const postsDirectory = join(process.cwd(), "markdown/projects");
+const postsDirectory = join(process.cwd(), "src/markdown/projects");
 
 export const getPostSlugs = () => {
     return fs.readdirSync(postsDirectory)
@@ -37,8 +37,10 @@ export const getProjectsBySlug = (slug: string, fields: string[]) => {
     return items;
 }
 export const getAllProjects = (fields: string[]) => {
-    const slugs = getPostSlugs(), posts = slugs.map(slug => {
-        getProjectsBySlug(slug, fields);
+    const slugs = getPostSlugs();
+    const posts: { [key: string]: string | object; }[] = [];
+    slugs.map(slug => {
+        posts.push(getProjectsBySlug(slug, fields));
     });
     return posts;
 }
