@@ -3,7 +3,7 @@
 import React from 'react';
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 import Image from "next/image";
-import banner from "@/assets/images/home/banner/banner-bg-img.png"
+import banner from "../../public/images/home/banner/banner-bg-img.png"
 import primLeaf from "@/assets/icons/primary-leaf.svg"
 import arrow from "@/assets/icons/arrow-icon.svg"
 

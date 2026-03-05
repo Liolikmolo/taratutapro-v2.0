@@ -3,8 +3,8 @@ import React, {useEffect, useState} from 'react';
 import {useInView} from "react-intersection-observer";
 import CountUp from "react-countup";
 import NavigationLink from "@/shared/navigation-link";
-import sectionbg from "@/assets/images/home/statsfact/sectionbg.png"
-import sectiondark from "@/assets/images/home/statsfact/sectionbgdark.png"
+import sectionbg from "../../public/images/home/statsfact/sectionbg.png"
+import sectiondark from "../../public/images/home/statsfact/sectionbgdark.png"
 import Image from "next/image";
 
 type statsFactsDataType = {

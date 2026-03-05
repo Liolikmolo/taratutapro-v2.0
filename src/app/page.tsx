@@ -2,6 +2,8 @@ import {Metadata} from "next";
 import HeroSection from "@/components/hero-section";
 import StatsFacts from "@/components/stats-facts";
 import Portfolio from "@/components/portfolio";
+import Services from "@/components/services";
+import AboutUs from "@/components/about-us";
 
 export const metadata: Metadata = {
     title: "Сайт мастера печника Алексея Таратуты",
@@ -13,6 +15,8 @@ export default function Home() {
             <HeroSection />
             <StatsFacts />
             <Portfolio />
+            <Services />
+            <AboutUs />
         </>
     );
 }
