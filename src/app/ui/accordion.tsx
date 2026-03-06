@@ -1,0 +1,21 @@
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import React from "react";
+import {cn} from "@/lib/utils";
+
+const Accordion = AccordionPrimitive.Root
+
+const AccordionItem = React.forwardRef<React.ComponentRef<typeof AccordionPrimitive.Item>, React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>>(({className, ...props}, ref) => (
+    <AccordionPrimitive.Item ref={ref} className={cn("border-b border-secondary/12 dark:border-white/12", className)} {...props}/>
+))
+AccordionItem.displayName = "AccordionItem";
+
+const AccordionTrigger = React.forwardRef<React.ComponentRef<typeof AccordionPrimitive.Trigger>, React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>>(({className, children, ...props}, ref) => (
+    <AccordionPrimitive.Header className="flex">
+        <AccordionPrimitive.Trigger
+            ref={ref}
+            className={cn("flex cursor-pointer flex-1 items-center justify-between py-5 lg:py-7 text-sm font-medium transition-all text-left [&[data-state=open]>#plusicon]:rotate-45 [&[data-state=open]>#plusicon]:bg-primary", className)} {...props}/>
+        {children}
+        <div id="plusicon" className="bg-secondary/12 dark:bg-white/50 p-2 md:p-3 rounded-full transition-transform duration-200">
+
+        </div>
+))
