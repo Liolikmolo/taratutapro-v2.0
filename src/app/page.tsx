@@ -5,6 +5,7 @@ import Portfolio from "@/components/portfolio";
 import Services from "@/components/services";
 import AboutUs from "@/components/about-us";
 import Testimonial from "@/components/testimonial";
+import Faq from "@/components/faq";
 
 export const metadata: Metadata = {
     title: "Сайт мастера печника Алексея Таратуты",
@@ -19,6 +20,7 @@ export default function Home() {
             <Services />
             <AboutUs />
             <Testimonial/>
+            <Faq/>
         </>
     );
 }
