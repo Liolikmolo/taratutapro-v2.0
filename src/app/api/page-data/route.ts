@@ -1,24 +1,5 @@
 import {NextResponse} from "next/server";
 
-const avatarList = [
-    {
-        image: "/images/avatar/avatar_1.jpg",
-        title: "Сергей Петров"
-    },
-    {
-        image: "/images/avatar/avatar_2.jpg",
-        title: "Анна Фёдорова"
-    },
-    {
-        image: "/images/avatar/avatar_3.jpg",
-        title: "София Иванова"
-    },
-    {
-        image: "/images/avatar/avatar_4.jpg",
-        title: "Пётр Сергеев"
-    },
-];
-
 const statsFactData = {
     number: '01',
     name: "Факты обо мне",
@@ -96,88 +77,6 @@ const testimonialData = {
     },
 };
 
-const teamData = {
-    number: '06',
-    data: [
-        {
-            image: "/images/home/team/team-img-1.png",
-            name: "Martha Finley",
-            position: "Creative Director",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-        {
-            image: "/images/home/team/team-img-2.png",
-            name: "Floyd Miles",
-            position: "Marketing Strategist",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-        {
-            image: "/images/home/team/team-img-3.png",
-            name: "Glenna Snyder",
-            position: "Lead Designer",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-        {
-            image: "/images/home/team/team-img-4.png",
-            name: "Albert Flores",
-            position: "UX/UI Developer",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-    ]
-};
-
 const faqData = {
     data: [
         {
@@ -207,15 +106,15 @@ const faqData = {
     ]
 };
 const contactData = {
-    keypoint: ["Always-On Customer Support", "Service Across the Globe"],
+    keypoint: ["Постоянная поддержка клиентов", "Работаю по всей стране"],
     managerProfile: {
         image: "/images/avatar/avatar_1.jpg",
-        name: "Courtney Henry",
-        position: "Onboarding & Success Manager"
+        name: "Алексей Таратута",
+        position: "Мастер-печник"
     }
 }
 
-const aboutUsStats = [
+const aboutMeStats = [
     {
         number: 45,
         postfix: "+",
@@ -237,20 +136,13 @@ const aboutUsStats = [
     },
 ]
 
-const servicesSliderData = [
-    "Branding", "Web development", "Agency", "Content creation", "SaaS", "Motion & 3d modeling", "Photography"
-]
-
 export const GET = async () => {
     return NextResponse.json({
-        avatarList,
         statsFactData,
         servicesData,
         testimonialData,
-        teamData,
         faqData,
         contactData,
-        aboutUsStats,
-        servicesSliderData
+        aboutMeStats,
     });
 };

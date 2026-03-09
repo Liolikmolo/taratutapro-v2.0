@@ -85,7 +85,7 @@ const StatsFacts = () => {
                             </div>
                             <div>
                                 <NavigationLink
-                                    navigationTitle = "Кто я такой?" navigationLink = "/about" transform = {true}
+                                    navigationTitle = "Кто я такой?" navigationLink = "/about-me" transform = {true}
                                 />
                             </div>
                         </div>

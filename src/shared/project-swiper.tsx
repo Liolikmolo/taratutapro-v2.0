@@ -9,7 +9,7 @@ import Link from "next/link";
 type ProjectType = {
     title: string,
     slug: string,
-    ScopeOfWork: string[],
+    scopeOfWork: string[],
     industry: string,
     coverImage: string
 }
@@ -83,7 +83,7 @@ const ProjectSwiper = () => {
                                     {value?.title}
                                 </h3>
                                 <div className = "flex gap-3">
-                                    {value?.ScopeOfWork?.map((tag, index) => {
+                                    {value?.scopeOfWork?.map((tag, index) => {
                                         return (
                                             <p
                                                 key = {index}

@@ -38,7 +38,7 @@ export const getProjectsBySlug = (slug: string, fields: string[]) => {
 }
 export const getAllProjects = (fields: string[]) => {
     const slugs = getPostSlugs();
-    const posts: { [key: string]: string | object; }[] = [];
+    const posts: { [key: string]: any; }[] = [];
     slugs.map(slug => {
         posts.push(getProjectsBySlug(slug, fields));
     });

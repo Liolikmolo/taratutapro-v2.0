@@ -2,7 +2,7 @@ import React from 'react';
 import StarRating from "@/shared/star-rating";
 import Image from "next/image";
 
-const AboutUs = () => {
+const AboutMe = () => {
     return (
         <section className = "py-20 md:py-40 dark:bg-darkblack">
             <div className = "container">
@@ -121,4 +121,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default AboutMe;
