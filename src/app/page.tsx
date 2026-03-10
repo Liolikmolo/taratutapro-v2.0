@@ -1,12 +1,12 @@
 import {Metadata} from "next";
-import HeroSection from "@/components/hero-section";
+import MainSection from "@/components/main-section";
 import StatsFacts from "@/components/stats-facts";
 import Portfolio from "@/components/portfolio";
 import Services from "@/components/services";
-import AboutUs from "@/components/about-me/about-me";
 import Testimonial from "@/components/testimonial";
 import Faq from "@/components/faq";
 import Contacts from "@/components/contacts";
+import AboutMe from "@/components/about-me/about-me";
 
 export const metadata: Metadata = {
     title: "Сайт мастера печника Алексея Таратуты",
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <>
-            <HeroSection />
+            <MainSection />
             <StatsFacts />
             <Portfolio />
             <Services />
-            <AboutUs />
+            <AboutMe />
             <Testimonial />
             <Faq />
-            <Contacts contactsDataValue = "10" />
+            <Contacts contactsDataValue = "07" />
         </>
     );
 }

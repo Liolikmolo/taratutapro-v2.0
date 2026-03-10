@@ -26,10 +26,10 @@ const ProjectsList = () => {
                                             />
                                             <Link
                                                 href = {`/projects/${project.slug}`}
-                                                className = "absolute top-0 left-0 backdrop-blur-xs bg-black/70 w-full h-full hidden group-hover:flex"
+                                                className = "absolute top-0 left-0 backdrop-blur-xs  w-full h-full hidden group-hover:flex"
                                             >
                                                 <span
-                                                    className = "absolute top-0 left-0 backdrop-blur-xs bg-black/70 w-full h-full hidden group-hover:flex"
+                                                    className = "absolute top-0 left-0 backdrop-blur-xs bg-black/50 w-full h-full hidden group-hover:flex"
                                                 >
                                                     <svg
                                                         width = "65" height = "64" viewBox = "0 0 65 64" fill = "none"

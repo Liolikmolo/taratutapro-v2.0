@@ -8,7 +8,7 @@ import primLeaf from "../../public/images/Icon/primary-leaf.svg"
 import arrow from "../../public/images/Icon/arrow-icon.svg"
 
 
-const HeroSection = () => {
+const MainSection = () => {
     return (
         <ParallaxProvider>
             <Parallax speed = {-25}>
@@ -47,4 +47,4 @@ const HeroSection = () => {
     );
 };
 
-export default HeroSection;
+export default MainSection;

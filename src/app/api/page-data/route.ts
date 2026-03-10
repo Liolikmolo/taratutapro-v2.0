@@ -116,23 +116,22 @@ const contactData = {
 
 const aboutMeStats = [
     {
-        number: 45,
+        number: 35,
         postfix: "+",
-        title: 'Presence in global markets',
-        descr: "Expanding reach across international regions with localized expertise and worldwide impact."
+        title: 'Населённых пунктов по всей Беларуси',
+        descr: "Выезжаю в любую точку страны — построим печь, которая согреет вашу семью на долгие годы."
     },
     {
-        number: 15,
-        prefix: "$",
-        postfix: "M",
-        title: 'In strategic investments',
-        descr: "Driving growth with curated partnerships and high-performing, audience-driven initiatives."
+        number: 69,
+        postfix: "К+",
+        title: 'Кирпичей прошло через руки мастера',
+        descr: "Создаю печи с душой: внимательно изучу ваши пожелания и особенности дома, чтобы предложить идеальное решение. Доверьтесь мастеру, который слышит клиента!."
     },
     {
-        number: 158,
+        number: 18,
         postfix: "+",
-        title: 'Trusted brand collaborations',
-        descr: "Shaping industry conversations through innovation, creativity, and lasting influence."
+        title: 'Проверенных производителей и поставщиков',
+        descr: "Строю печи, которые будут согревать поколения: использую современные технологии и вековые традиции мастерства. Ваш комфорт — моя долгосрочная цель."
     },
 ]
 
