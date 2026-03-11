@@ -30,10 +30,11 @@ export const getBlogsBySlug = (slug: string, fields: string[]) => {
         if (field === 'metadata') {
             items[field] = {...data, coverImage: data.coverImage || null};
         }
-        if (typeof data[field] === 'undefined') {
+        if (typeof data[field] !== 'undefined') {
             items[field] = data[field];
         }
     })
+
     return items;
 }
 

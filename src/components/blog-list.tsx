@@ -6,6 +6,7 @@ import Image from "next/image";
 const BlogList = () => {
 
     const blogs = getAllBlogs(['title', 'slug', 'coverImage', 'date'])
+    console.log(blogs)
 
     return (
         <section className="dark:bg-darkblack py-20 md:py-40">

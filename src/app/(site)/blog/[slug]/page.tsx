@@ -11,8 +11,8 @@ type Props = {
 
     const blog = getBlogsBySlug(slug, ["title", "detail", "date", "coverImage", "scrollToRead", "description", "galleryImg", "content"]);
 
-    const siteName = process.env.SITE_NAME || "Your site name";
-    const authorName = process.env.SITE_AUTHOR_NAME || "Your author name";
+    const siteName = process.env.SITE_NAME || "taratuta.pro";
+    const authorName = process.env.SITE_AUTHOR_NAME || "Мастер-печник Алексей Таратута";
 
     if(blog) {
         const metadata = {
@@ -34,7 +34,7 @@ type Props = {
     } else {
         return {
             title: "Not Found",
-            description: "No blog article has been found",
+            description: "Не найдено ни одной записи",
             author: authorName,
             robots: {
                 index: false,
@@ -55,6 +55,7 @@ type Props = {
 const Post = async ({params} : Props) => {
     const {slug} = await params;
     const blog = getBlogsBySlug(slug, ["title", "detail", "date", "coverImage", "scrollToRead", "description", "galleryImg", "content"]);
+    console.log(blog);
 
     const content = await markdownToHtml(blog.content || '');
     return (
@@ -68,7 +69,7 @@ const Post = async ({params} : Props) => {
                       <div className="flex flex-col gap-12 md:gap-24 py-20 xl:py-40">
                           <div className="flex flex-col xl:flex xl:flex-row items-start xl:items-center gap-8">
                               <div className="flex items-center gap-4 md:gap-8 w-full max-w-xl">
-                                  <h2 className="text-4xl lg:text-5xl xl:text-56">
+                                  <h2 className="text-xl">
                                       Прокрутите, чтобы почитать
                                   </h2>
                               </div>
