@@ -38,7 +38,17 @@ export default function RootLayout({
         <html lang = "ru" suppressHydrationWarning>
             <head>
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
+                
             </head>
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVE6K5KGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KVE6K5KGD');
+</script>
       <body className = {manrope.className}>
         <ThemeProvider attribute = {"class"} enableSystem = {false} defaultTheme = "light">
             {!hideLayout && <Header />}
