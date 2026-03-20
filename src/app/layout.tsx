@@ -39,10 +39,10 @@ export default function RootLayout({
             <head>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVE6K5KGD"></script>
                 <script>
-                  dataLayer = window.dataLayer || [];
-                  function gtag(arguments){dataLayer.push(arguments)}
-                  gtag('js', new Date());
-                  gtag('config', 'G-4KVE6K5KGD');
+                    const dataLayer = window.dataLayer || []
+                    function gtag(){ dataLayer.push(arguments)}
+                    gtag("js", new Date());
+                    gtag('config', 'G-4KVE6K5KGD');
                 </script>
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
             </head>
