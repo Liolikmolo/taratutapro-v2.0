@@ -40,7 +40,7 @@ export default function RootLayout({
                 {/* <!-- Google Tag Manager --> */}
                     <script>
                         (function(w,d,s,l,i){ 
-                            w[l]=w[l]||[];
+                            w[l]=w[l];
                             w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
                             const f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l! = 'dataLayer'?'&l = '+l:'';
                             j.async=true;
@@ -53,6 +53,11 @@ export default function RootLayout({
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
             </head>
         <body className = {manrope.className}>
+            <!-- Google Tag Manager (noscript) -->
+                <noscript>
+                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3X82MV5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                </noscript>
+            <!-- End Google Tag Manager (noscript) -->
         <ThemeProvider attribute = {"class"} enableSystem = {false} defaultTheme = "light">
             {!hideLayout && <Header />}
             {children}
