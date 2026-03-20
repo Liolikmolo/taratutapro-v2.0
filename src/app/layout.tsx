@@ -41,9 +41,6 @@ export default function RootLayout({
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
             </head>
         <body className = {manrope.className}>
-                <noscript>
-                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3X82MV5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-                </noscript>
         <ThemeProvider attribute = {"class"} enableSystem = {false} defaultTheme = "light">
             {!hideLayout && <Header />}
             {children}
