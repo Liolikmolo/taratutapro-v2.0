@@ -38,7 +38,7 @@ export default function RootLayout({
         <html lang = "ru" suppressHydrationWarning>
             <head>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVE6K5KGD"></script>
-                <script>
+                {/* <script>
                     function gtag(){ 
                     dataLayer = window.dataLayer || []
                     dataLayer.push(arguments)
@@ -46,7 +46,7 @@ export default function RootLayout({
                     }
                     gtag("js", new Date());
                     gtag('config', 'G-4KVE6K5KGD');
-                </script>
+                </script> */}
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
             </head>
         <body className = {manrope.className}>
