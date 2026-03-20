@@ -37,7 +37,7 @@ export default function RootLayout({
     return (
         <html lang = "ru" suppressHydrationWarning>
             <head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVE6K5KGD"></script>
+                <script async src="https://www.googletagmanager.com/ns.html?id=GTM-N3X82MV5"></script>
                 <meta name="google-site-verification" content="-gHHno-uqJ7dEmK2J_iREdewXLFVEiMDNrQSZJWr920" />
             </head>
         <body className = {manrope.className}>
