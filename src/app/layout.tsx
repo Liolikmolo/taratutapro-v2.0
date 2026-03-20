@@ -39,8 +39,10 @@ export default function RootLayout({
             <head>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVE6K5KGD"></script>
                 <script>
-                    const dataLayer = window.dataLayer || []
-                    function gtag(){ dataLayer.push(arguments)}
+                    function gtag(){ 
+                    let dataLayer = window.dataLayer || [];
+                    dataLayer.push(arguments);
+                    return dataLayer;}
                     gtag("js", new Date());
                     gtag('config', 'G-4KVE6K5KGD');
                 </script>
